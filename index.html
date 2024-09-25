@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="game.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
+</head>
+<body>
+  <div class="start">
+    <form class="user-form" action="">
+      <div class="player-names">
+        <div>
+          <label for="player-1-name"></label>
+          <input type="text" id="player-1-name" name="player-1-name" placeholder="Player One">
+        </div>
+        
+        <div>
+          <label for="player-2-name"></label>
+          <input type="text" id="player-2-name" name="player-2-name" placeholder="Player Two">
+        </div>
+      </div>
+    
+      <button class="form-submit" type="submit">Start</button>
+    </form>
+  </div>
+  <div class="game">
+    <div class="player-info">
+      <div class="player-1">
+        <p>Player 1</p>
+      </div>
+      <div class="player-2">
+        <p>Player 2</p>
+      </div>
+    </div>
+    <div class="gameboard">
+
+    </div>
+
+    <div class="game-controls">
+      <div>
+        <button class="restart">New Round</button>
+      </div>
+
+      <div class="game-info">
+        <p>Player 1's turn!</p>
+      </div>
+  
+      <div>
+        <button class="new-game">New Game</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

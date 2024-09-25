@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif, system-ui;
+}
+
+.start {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.player-names {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-submit {
+  width: 150px;
+  margin-top: 50px;
+  align-self: center;
+}
+
+.game {
+  height: 100vh;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.player-info {
+  display: flex;
+  justify-content: space-between;
+  width: 800px;
+  margin-bottom: 80px;
+}
+
+.gameboard {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 50px;
+  overflow: hidden;
+}
+
+.grid-item {
+  height: 200px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: 2px solid black;
+  box-sizing: border-box;
+}
+
+.game-controls {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.restart {
+  display: none;
+}
+
+.circle {
+  height: 90px;
+  width: 90px;
+  border: 15px solid black;
+  border-radius: 50%;
+}
+
+.cross {
+  height: 115px;
+  width: 115px;
+  position: relative;
+  transform: rotate(45deg);
+}
+
+.cross::before, .cross::after {
+  content: "";
+  position: absolute;
+  background-color: black;
+}
+
+.cross::before {
+  left: 50%;
+  width: 30%;
+  height: 100%;
+  margin-left: -15%;
+}
+
+.cross::after {
+  top: 50%;
+  height: 30%;
+  width: 100%;
+  margin-top: -15%;
+}
